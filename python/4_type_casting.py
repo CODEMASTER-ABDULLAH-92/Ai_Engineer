@@ -8,8 +8,20 @@ For example:
 -> Convert string → integer
 -> Convert integer → float
 -> Convert list → tuple
+"""
 
 """
+Common Type Casting Functions:
+
+1. int()    -> Convert to integer
+2. float()  -> Convert to float
+3. str()    -> Convert to string
+4. list()   -> Convert to list
+5. tuple()  -> Convert to tuple
+6. set()    -> Convert to set
+7. bool()   -> Convert to boolean
+"""
+
 # String to Integer
 num = "10"
 converted_num = int(num)
@@ -80,16 +92,3 @@ boolean_value = bool(value)
 print("\nInteger to Boolean:")
 print(boolean_value)
 print(type(boolean_value))
-
-
-"""
-Common Type Casting Functions:
-
-1. int()    -> Convert to integer
-2. float()  -> Convert to float
-3. str()    -> Convert to string
-4. list()   -> Convert to list
-5. tuple()  -> Convert to tuple
-6. set()    -> Convert to set
-7. bool()   -> Convert to boolean
-"""
