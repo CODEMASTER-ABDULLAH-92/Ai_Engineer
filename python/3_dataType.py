@@ -5,6 +5,19 @@ A data type defines the kind of value a variable can store.
 Python automatically detects the data type when you assign a value.
 """
 
+"""
+Common Python Data Types:
+1. int       -> Whole numbers
+2. float     -> Decimal numbers
+3. str       -> Text data
+4. bool      -> True or False
+5. list      -> Ordered, changeable collection
+6. tuple     -> Ordered, unchangeable collection
+7. dict      -> Key-value pairs
+8. set       -> Unordered unique values
+9. NoneType  -> Represents no value
+"""
+
 # Integer (int)
 age = 20
 print("Integer:", age)
@@ -54,16 +67,3 @@ value = None
 print("\nNone Type:", value)
 print(type(value))
 
-
-"""
-Common Python Data Types:
-1. int       -> Whole numbers
-2. float     -> Decimal numbers
-3. str       -> Text data
-4. bool      -> True or False
-5. list      -> Ordered, changeable collection
-6. tuple     -> Ordered, unchangeable collection
-7. dict      -> Key-value pairs
-8. set       -> Unordered unique values
-9. NoneType  -> Represents no value
-"""
