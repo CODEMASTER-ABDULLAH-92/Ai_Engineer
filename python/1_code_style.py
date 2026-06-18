@@ -21,7 +21,7 @@ https://peps.python.org/pep-0008/
     import os
 8. 2 blank lines for the top level functions and classes and one for the inner methods 
 9. Use docstrings for modules, functions, and classes. Like """"""
-10.  
+10. Use the is instead of the ==
 """
 
 
@@ -350,6 +350,3 @@ if __name__ == "__main__":
 # PYTHONIC
 result = [i for i in range(10) if i % 2 == 0]
 print(result)
-
-
-

@@ -19,6 +19,9 @@ Common Python Data Types:
 """
 
 # Integer (int)
+from typing import Literal
+
+
 age = 20
 print("Integer:", age)
 print(type(age))
@@ -41,12 +44,12 @@ print(type(is_student))
 # List (list)
 fruits = ["apple", "banana", "mango"]
 print("\nList:", fruits)
-print(type(fruits))
+print(type[str](fruits))
 
 # Tuple (tuple)
 coordinates = (10, 20)
 print("\nTuple:", coordinates)
-print(type(coordinates))
+print(type[Literal[10, 20], ...](coordinates))
 
 # Dictionary (dict)
 student = {
