@@ -30,11 +30,6 @@ def creating_dict():
         "age":30
     }
     dict2 = dict(name = "Muhammad Abdullah", age = 23)
-
-    keys = ['name', 'age', 'city']
-    values = ['Muhammad Abdullah', 23, 'NYC']
-    dict3 = dict(zip(keys, values))
-
 # creating_dict()
 
 # =============================

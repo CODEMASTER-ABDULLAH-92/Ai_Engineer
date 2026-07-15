@@ -18,6 +18,11 @@ Common Python Data Types:
 9. NoneType  -> Represents no value
 """
 
+
+num = (1,2,3,4,5)
+# last = num.pop()
+# print(last)
+print(num[1])
 # Integer (int)
 from typing import Literal
 

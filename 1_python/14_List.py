@@ -34,8 +34,6 @@ list3 = list("hello")    # ['h', 'e', 'l', 'l', 'o']
 # Method 3: List comprehension
 list4 = [x*2 for x in range(5)]  # [0, 2, 4, 6, 8]
 
-# Method 4: Range
-list5 = list(range(5))  # [0, 1, 2, 3, 4]
 
 
 
@@ -263,7 +261,7 @@ def iterate_over_matrix():
         for element in row:
             print(element, end=" ")
     
-# iterate_over_matrix()
+iterate_over_matrix()
 
 
 # ===============================================

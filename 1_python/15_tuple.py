@@ -227,8 +227,8 @@ def comparison():
 
 def tuple_Unpacking():
     # Unpacking tuple into variables
-    x, y, z = coordinates
     coordinates = (10, 20, 30)
+    x, y, z = coordinates
     print(x, y, z)  # 10 20 30
 
     # Swapping variables using tuples
@@ -240,7 +240,7 @@ def tuple_Unpacking():
     name, age, city = ("Alice", 25, "New York")
     print(name, age, city)  # Alice 25 New York
 
-# tuple_Unpacking()
+tuple_Unpacking()
 
 
 

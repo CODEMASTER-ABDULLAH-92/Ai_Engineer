@@ -51,7 +51,7 @@ set9 = set(range(10, 20, 2))  # {10, 12, 14, 16, 18}
 
 # =======================================
 # Accessing Elements
-# Sets are NOT Indexable: (So we can not accessing the elements )
+# Sets are NOT Indexable because this is unordered: (So we can not accessing the elements )
 # =======================================
 
 my_set = {1, 2, 3, 4, 5}
