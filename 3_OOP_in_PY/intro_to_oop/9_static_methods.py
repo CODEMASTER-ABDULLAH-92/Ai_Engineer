@@ -48,15 +48,3 @@ class Calculator:
         
 print(Calculator.add(10,20))
 print(Calculator.check_is_even(10))
-
-
-
-class Student:
-    
-    def __init__(self, name):
-        self.name = name
-
-s1 = Student("Ahmed")
-s2 = s1
-print(s1.name)
-print(s2.name)
