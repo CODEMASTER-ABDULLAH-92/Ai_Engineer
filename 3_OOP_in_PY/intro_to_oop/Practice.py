@@ -688,5 +688,209 @@ def oop():
     S.change_school("WAU")
     S.is_pass(78)
     
-oop()
+# oop()
 
+
+
+
+# class Atm:
+    
+#     def __init__(self, pin, balance):
+#         self.pin = pin
+#         self.balance = balance
+    
+#     def menu(self):
+#         user_input = input('''
+# Hi, how can i help u?
+# 1. Press 1 to create pin.
+# 2. Press 2 to change pin
+# 3. Press 3 to check balance
+# 4. Press 4 to withdraw
+# 5. Press 5 to deposit 
+# 6. Anything else to exist   
+# ''')
+        
+#         if user_input == '1':
+#             self.create_pin()
+#         elif user_input == '2':
+#             self.change_pin()
+#         elif user_input == '3':
+#             self.check_balance()
+#         elif user_input == '4':
+#             self.withdraw()
+#         elif user_input == '5':
+#             self.deposit()
+#             pass
+#         else:
+#             exit()
+        
+#     def create_pin(self):
+#         user_pin = int(input("Enter the pin: "))
+#         self.pin = user_pin
+#         print("Pin created Successfully")
+#         self.menu()
+    
+#     def change_pin(self):
+#         old_pin = int(input("Enter the old pin"))
+#         if old_pin == self.pin:
+#             new_pin = int(input("Enter the new Pin"))
+#             self.pin = new_pin
+#             print("Pin Updated Successfully.")
+#         else:
+#             print("Wrong Pin")
+#         self.menu()
+    
+#     def verify_user(self):
+#         user_pin = int(input("Enter the pin: "))
+#         if self.pin == user_pin:
+#             return True
+#         else:
+#             return False
+    
+#     def check_balance(self):
+#         if self.verify_user() == True:
+#             print(f'Current balance is: {self.balance}')
+#         else:
+#             print("Verification Error")
+#         self.menu()
+    
+#     def withdraw(self):
+#         if self.verify_user() == True:
+#             amount = int(input("Enter the amount: "))
+#             if amount <= self.balance:
+#                 self.balance -= amount
+#                 print(f"Amount Withdraw successfully. Your current balance is {self.balance}")
+#             else:
+#                 print("Insufficient Amount")
+#         self.menu()
+    
+#     def deposit(self):
+#         if self.verify_user() == True:
+#             amount = int(input("Enter the amount you want to deposit: "))
+#             if amount > 0:
+#                 self.balance += amount
+#                 print(f"Amount added successfully and your current balance is {self.balance}")
+#             else:
+#                 print("Invalid Amount: ")
+#         self.menu()
+
+
+# obj = Atm("123", 10000)
+# obj.menu()
+
+
+class ATM:
+    def __init__(self, pin, balance):
+        self.pin = str(pin)  # ✅ Store as string for consistency
+        self.balance = balance
+    
+    def menu(self):
+        while True:  # ✅ Use loop instead of recursion
+            user_input = input('''
+Hi, how can I help you?
+1. Press 1 to create pin.
+2. Press 2 to change pin
+3. Press 3 to check balance
+4. Press 4 to withdraw
+5. Press 5 to deposit 
+6. Anything else to exit   
+''')
+            
+            if user_input == '1':
+                self.create_pin()
+            elif user_input == '2':
+                self.change_pin()
+            elif user_input == '3':
+                self.check_balance()
+            elif user_input == '4':
+                self.withdraw()
+            elif user_input == '5':
+                self.deposit()
+            else:
+                print("Thank you! Goodbye.")
+                break  # ✅ Exit the loop
+    
+    def create_pin(self):
+        user_pin = input("Enter the new pin: ")
+        self.pin = user_pin
+        print("Pin created Successfully")
+    
+    def change_pin(self):
+        old_pin = input("Enter the old pin: ")
+        if old_pin == self.pin:
+            new_pin = input("Enter the new Pin: ")
+            self.pin = new_pin
+            print("Pin Updated Successfully.")
+        else:
+            print("Wrong Pin")
+    
+    def verify_user(self):
+        user_pin = input("Enter the pin: ")
+        return self.pin == user_pin  # ✅ Simpler return
+    
+    def check_balance(self):
+        if self.verify_user():
+            print(f'Current balance is: {self.balance}')
+        else:
+            print("Verification Error")
+    
+    def withdraw(self):
+        if self.verify_user():
+            try:
+                amount = int(input("Enter the amount: "))
+                if 0 < amount <= self.balance:
+                    self.balance -= amount
+                    print(f"Amount Withdrawn successfully. Your current balance is {self.balance}")
+                else:
+                    print("Insufficient Amount or Invalid Amount")
+            except ValueError:
+                print("Please enter a valid number")
+        else:
+            print("Verification Error")
+    
+    def deposit(self):
+        if self.verify_user():
+            try:
+                amount = int(input("Enter the amount you want to deposit: "))
+                if amount > 0:
+                    self.balance += amount
+                    print(f"Amount added successfully. Your current balance is {self.balance}")
+                else:
+                    print("Invalid Amount")
+            except ValueError:
+                print("Please enter a valid number")
+        else:
+            print("Verification Error")
+
+
+obj = ATM("123", 10000)
+obj.menu()
+
+
+#===============================================
+# class diagram of this class 
+#===============================================
+
+
+# ┌──────────────────────────┐
+# │           ATM            │
+# ├──────────────────────────┤
+# │ - pin: str               │
+# │ - balance: int           │
+# ├──────────────────────────┤
+# │ + __init__(pin, balance) │
+# │ + menu(): void           │
+# │ + create_pin(): void     │
+# │ + change_pin(): void     │
+# │ + verify_user(): bool    │
+# │ + check_balance(): void  │
+# │ + withdraw(): void       │
+# │ + deposit(): void        │
+# └──────────────────────────┘
+
+# Visibility Signs 
+
+# +	Public	
+# -	Private	
+# #	Protected	
+# ~	Package
