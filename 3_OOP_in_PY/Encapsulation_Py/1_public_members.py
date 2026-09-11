@@ -11,8 +11,13 @@ class Student:
     def display(self):           # Public method
         print(self.name)
 
-
+# at here student is not the object, it holds the address the of the object .
 student = Student()
 
 print(student.name)      # ✅ Allowed
 student.display()        # ✅ Allowed
+
+# We can also add the attribute from outside the class also 
+
+student.gender = 'male'
+print(student.gender)

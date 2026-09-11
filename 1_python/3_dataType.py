@@ -19,14 +19,9 @@ Common Python Data Types:
 """
 
 
-num = (1,2,3,4,5)
-# last = num.pop()
-# print(last)
-print(num[1])
+
 # Integer (int)
 from typing import Literal
-
-
 age = 20
 print("Integer:", age)
 print(type(age))

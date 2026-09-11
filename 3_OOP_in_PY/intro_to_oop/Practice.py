@@ -894,3 +894,54 @@ obj.menu()
 # -	Private	
 # #	Protected	
 # ~	Package
+
+
+
+
+
+
+class Point:
+    
+    def __init__(self, x, y):
+        self.x_cod = x
+        self.y_cod = y
+    
+    def __str__(self):
+        # return f'<{self.x_cod},{self.y_cod}>'
+        return '<{},{}>'.format(self.x_cod, self.y_cod)
+    
+    def euclidean_distance(self, other):
+        return ((self.x_cod - other.x_cod)**2 + (self.y_cod - other.y_cod) ** 2) ** 0.5
+    
+    def distance_from_origin(self):
+        return self.euclidean_distance(self,Point(0,0))
+    
+class Line:
+    
+    def __init__(self, a, b, c):
+        self.a = a
+        self.b = b
+        self.c = c
+    
+    def __str__(self):
+        return '{}x + {}y + {} = 0'.format(self.a, self.b, self.c)
+    
+    def point_on_line(line, point):
+        if line.a * point.x_cod + line.b * point.y_cod + line.c == 0:
+            return "lies on the line."
+        else:
+            return 'Does not lies on line.'
+    
+    def shortest_distance(line, point):
+        # abs(A*x1 + B*y1 + C)
+        # abs() removes the negative sign and gives the non-negative value.
+        return abs(line.a * point.x_cod + line.b * point.y_cod + line.c) / (line.a ** 2 + line.b ** 2)
+p1=Point(0,0)
+p2=Point(1,1)
+print(p1.euclidean_distance(p2))
+l1 = Line(1,1,-2)
+print(l1)
+print(l1.point_on_line(p2))
+print(l1.shortest_distance(p2))
+
+

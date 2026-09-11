@@ -23,7 +23,7 @@ with double quotes"""
 # ✅ Immutable - Cannot be changed after creation
 # ✅ Iterable - Can iterate through characters
 # ✅ Indexable - Access characters by index (positive and negative)
-# ✅ Slicable - Extract substrings using slicing
+# ✅ Sliceable - Extract substrings using slicing
 # ✅ Unicode Support - Can handle any Unicode character
 
 
