@@ -136,10 +136,3 @@ for i in range(1, 6):
     total += i
 
 print("Sum =", total)
-
-
-# ------------------------------------------
-# End of Program
-# ------------------------------------------
-
-print("\nProgram Completed!")

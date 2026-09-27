@@ -1,5 +1,5 @@
 """
-Python Variables - Complete Beginner Guide
+Python Variables
 """
 
 # ==========================================

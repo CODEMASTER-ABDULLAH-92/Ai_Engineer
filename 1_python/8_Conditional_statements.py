@@ -6,7 +6,7 @@
 # 1. Simple if Statement
 # ------------------------------------------
 
-from traceback import print_tb
+
 
 
 def program():

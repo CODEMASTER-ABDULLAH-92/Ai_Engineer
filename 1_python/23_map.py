@@ -1,7 +1,6 @@
 """
 ===========================================================
-               MAP() FUNCTION IN PYTHON
-         (Beginner Friendly Explanation)
+MAP() FUNCTION IN PYTHON
 ===========================================================
 
 # map() applies a function to every item in an iterable (like a list) and returns the transformed values.

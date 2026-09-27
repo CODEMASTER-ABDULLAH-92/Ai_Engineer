@@ -10,7 +10,7 @@ It is often used to describe:
 2. Classes
 3. Modules
 
-Python can read docstrings as documentation.
+Python can read docstring as documentation.
 """
 
 print("Docstring Example")
