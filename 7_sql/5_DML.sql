@@ -32,7 +32,7 @@ password VARCHAR(255)
 -- as the columns in the table.
 
 INSERT INTO health_app.users
-VALUES ('ABDULLAH', '[ABDULLAH4@GMAIL.COM](mailto:ABDULLAH4@GMAIL.COM)', '1234');
+VALUES ('ABDULLAH', 'ABDULLAH4@GMAIL.COM', '1234');
 
 -- =====================================
 -- 2. INSERT DATA INTO SPECIFIC COLUMNS
@@ -46,7 +46,7 @@ VALUES ('ABDULLAH', '[ABDULLAH4@GMAIL.COM](mailto:ABDULLAH4@GMAIL.COM)', '1234')
 -- if NULL is allowed.
 
 INSERT INTO health_app.users (name, email)
-VALUES ('amit', '[amit@gmail.com](mailto:amit@gmail.com)');
+VALUES ('amit', 'amit@gmail.com');
 
 -- =====================================
 -- 3. INSERT MULTIPLE ROWS
@@ -421,7 +421,7 @@ UPDATE health_app.users
 SET
 name = 'ABDULLAH',
 password = '1234666'
-WHERE email = '[abdullah22@gmail.com](mailto:abdullah22@gmail.com)';
+WHERE email = 'abdullah22@gmail.com';
 
 -- This updates two columns:
 -- name     → ABDULLAH
@@ -429,7 +429,7 @@ WHERE email = '[abdullah22@gmail.com](mailto:abdullah22@gmail.com)';
 ---------------------
 
 -- Only the row whose email is
--- '[abdullah22@gmail.com](mailto:abdullah22@gmail.com)' is updated.
+-- 'abdullah22@gmail.com' is updated.
 
 -- =====================================
 -- IMPORTANT

@@ -15,19 +15,12 @@ But...
 He never tells you HOW MANY gifts.
 
 Maybe
-
 🎁
-
 Maybe
-
 🎁 🎁 🎁
-
 Maybe
-
 🎁 🎁 🎁 🎁 🎁 🎁
-
 The number is unknown.
-
 Python solves this problem using
 
 *args
@@ -72,11 +65,8 @@ add(10, 20)
 Works
 
 But
-
 add(10,20,30)
-
 will give an error.
-
 Because the function
 expects ONLY TWO arguments.
 """
@@ -105,11 +95,8 @@ show_numbers(10, 20, 30, 40)
 Output
 
 (10,)
-
 (10,20)
-
 (10,20,30)
-
 (10,20,30,40)
 
 Notice
@@ -134,23 +121,16 @@ numbers(1, 2, 3)
 
 """
 The name
-
 args
-
 is NOT special.
 
 These are all valid.
-
 *numbers
-
 *items
-
 *values
-
 *anything
 
 The IMPORTANT part is
-
 *
 """
 
@@ -417,15 +397,11 @@ student(
 Output
 
 Name
-
 Ali
-
 Marks
-
 (80,90,85)
 
 Details
-
 {'city':'Lahore','age':20}
 """
 

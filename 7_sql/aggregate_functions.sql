@@ -19,7 +19,7 @@
 -- =====================================
 
 SELECT MAX(price)
-FROM health_app.smartphones;
+FROM smartphones;
 
 -- Returns the highest price.
 
@@ -28,7 +28,7 @@ FROM health_app.smartphones;
 -- =====================================
 
 SELECT MIN(price)
-FROM health_app.smartphones;
+FROM smartphones;
 
 -- Returns the lowest price.
 
@@ -37,7 +37,7 @@ FROM health_app.smartphones;
 -- =====================================
 
 SELECT AVG(price)
-FROM health_app.smartphones
+FROM smartphones
 WHERE brand_name = 'apple';
 
 -- Returns the average price
@@ -48,7 +48,7 @@ WHERE brand_name = 'apple';
 -- =====================================
 
 SELECT SUM(price)
-FROM health_app.smartphones
+FROM smartphones
 WHERE brand_name = 'apple';
 
 -- Returns the total price of
@@ -59,7 +59,7 @@ WHERE brand_name = 'apple';
 -- =====================================
 
 SELECT COUNT(*)
-FROM health_app.smartphones
+FROM smartphones
 WHERE brand_name = 'apple';
 
 -- Counts the number of rows
@@ -70,7 +70,7 @@ WHERE brand_name = 'apple';
 -- =====================================
 
 SELECT COUNT(DISTINCT brand_name)
-FROM health_app.smartphones;
+FROM smartphones;
 
 -- Counts the number of unique brands.
 
@@ -91,7 +91,7 @@ FROM health_app.smartphones;
 -- =====================================
 
 SELECT STD(screen_size)
-FROM health_app.smartphones;
+FROM smartphones;
 
 -- STD() calculates the standard deviation
 -- of screen_size.
@@ -101,7 +101,7 @@ FROM health_app.smartphones;
 -- =====================================
 
 SELECT VARIANCE(screen_size)
-FROM health_app.smartphones;
+FROM smartphones;
 
 -- VARIANCE() calculates how much the
 -- screen_size values vary from their average.

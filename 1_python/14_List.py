@@ -61,6 +61,8 @@ def indexing():
     print(fruits[2:])      # ['cherry', 'date', 'elderberry']
     print(fruits[::2])     # ['apple', 'cherry', 'elderberry']
     print(fruits[::])      # ['apple', 'banana', 'cherry', 'date', 'elderberry'] This will give us the complete list 
+    
+    #This return the list in the reverse order
     print(fruits[::-1])    # ['elderberry', 'date', 'cherry', 'banana', 'apple']
 
 
